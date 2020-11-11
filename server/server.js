@@ -78,15 +78,16 @@ app.get('/count', (req, res) => {
 // Create your `/random` route here
 // when a user visits localhost:5000/random
 // this route should return a single train at random
-app.get('/count', (req, res) => {
+app.get('/random', (req, res) => {
     console.log('Sending train data...');
     // random person generator function from 'Guess Who' game
     function randomNumber(min, max) {
         return Math.floor(Math.random() * (1 + max - min) + min);
     }
-    
-    let trainCount = { numberOfTrains: trains.length };
-    res.send(trainCount);
+    // make a random number within the rang of the trains array
+    let randomTrainNumber = randomNumber(0, trains.length - 1)
+    console.log(randomTrainNumber);
+    res.send(trains[randomTrainNumber]);
 })
 
 
