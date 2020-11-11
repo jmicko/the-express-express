@@ -34,7 +34,12 @@ const trains = [
 // when a user visits localhost:5000/train
 // this route should return the array of trains
 
-// route to GET the cats
+// route to GET the index.html
+app.get('/', (req, res) => {
+    console.log('Sending train data...');
+    res.send(public/index.html);
+})
+// route to GET the trains
 app.get('/train', (req, res) => {
     console.log('Sending train data...');
     res.send(trains);
