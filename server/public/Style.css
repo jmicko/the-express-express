@@ -1,0 +1,37 @@
+body{
+    font-family: 'Noto Serif', serif;
+    text-align: center;
+    background-color: #463931;
+}
+
+h1{
+    padding: .5em;
+    background-color: #445257;
+    width: max-content;
+    margin: 0 auto;
+    border-radius: .7em;
+}
+
+h4{
+    padding: .5em;
+}
+
+.brown{
+    background-color: #D2B8A7;
+    margin: auto;
+    border-radius: .3em;
+    width: max-content;
+}
+
+img{
+    border-radius: 1em;
+    margin: .5em;
+}
+
+.container{
+    padding: 1em;
+    border-radius: 1em;
+    width: 720px;
+    margin: 5vh auto;
+    background-color: #A3544E;
+}
