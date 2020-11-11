@@ -6,6 +6,9 @@ const express = require('express');
 // bring in body parser which will help us parse incoming data
 const bodyParser = require('body-parser');
 
+// require the trains array
+const trains = require('./modules/trains');
+
 // create your express app
 // create an instance of the express webserver, we'll call it app
 const app = express();
@@ -17,16 +20,12 @@ const port = 5000;
 // Tell express where to find static files that it can send on request
 app.use(express.static('server/public'));
 
+// app.use(express.static('server/modules'));
+
 // tell express how to parse incoming data
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// This is your array of trains
-const trains = [
-    { name: 'Thomas', color: 'Blue' },
-    { name: 'Gordon', color: 'Blue' },
-    { name: 'Henry', color: 'Green' },
-    { name: 'James', color: 'Red' }
-];
+
 
 // -------- BASE -----//
 
