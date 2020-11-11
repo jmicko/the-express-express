@@ -8,4 +8,4 @@ const trains = [
     { name: 'James', color: 'Red' }
 ];
 
-module.exports = [trains];
+module.exports = trains;

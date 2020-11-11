@@ -1,37 +1,53 @@
-body{
+body {
     font-family: 'Noto Serif', serif;
     text-align: center;
     background-color: #463931;
 }
 
-h1{
+h1 {
     padding: .5em;
     background-color: #445257;
-    width: max-content;
+    max-width: max-content;
     margin: 0 auto;
     border-radius: .7em;
 }
 
-h4{
+h4 {
     padding: .5em;
 }
 
-.brown{
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    margin: auto;
+    padding: .3em .6em;
+    display: flex;
+    color: #5f8996;
+}
+
+a:visited{
+    color: #463931;
+}
+
+.brown {
     background-color: #D2B8A7;
     margin: auto;
     border-radius: .3em;
     width: max-content;
 }
 
-img{
+img {
     border-radius: 1em;
     margin: .5em;
 }
 
-.container{
+.container {
     padding: 1em;
     border-radius: 1em;
-    width: 720px;
+    max-width: 720px;
     margin: 5vh auto;
     background-color: #A3544E;
 }
